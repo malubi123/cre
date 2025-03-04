@@ -1,0 +1,62 @@
+/* Styl podstawowy */
+body {
+    background-color: #2d2d2d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Nagłówek */
+header {
+    padding: 50px 0;
+    background-color: #1c1c1c;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00FF00;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+/* Styl przycisku */
+.download-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #FF5733;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.download-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);  /* Powiększenie przy najechaniu */
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.5); /* Większy cień */
+}
+
+/* Styl treści */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Stopka */
+footer {
+    background-color: #1c1c1c;
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 0.8em;
+}
