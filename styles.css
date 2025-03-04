@@ -1,146 +1,62 @@
-/* Globalne ustawienia */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Tło strony z dynamicznym gradientem */
+/* Styl podstawowy */
 body {
-  background: linear-gradient(45deg, #ff8e53, #e43a15, #f9c200, #2a2a72);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  overflow: hidden;
+    background-color: #2d2d2d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-/* Animacja gradientu */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* Nagłówek */
+header {
+    padding: 50px 0;
+    background-color: #1c1c1c;
 }
 
-/* Styl głównego kontenera */
-.container {
-  text-align: center;
-  z-index: 10;
-  position: relative;
-  max-width: 90%;
-  padding: 40px;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Ciekawy nagłówek */
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: linear-gradient(45deg, #ff8e53, #f9c200);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 20px;
-  animation: textAnimation 2s ease-out;
+    font-size: 3em;
+    color: #00FF00;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-@keyframes textAnimation {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+p {
+    font-size: 1.2em;
+    color: #cccccc;
 }
 
-/* Linki z efektem hover */
-a {
-  color: #ff8e53;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease, color 0.3s ease;
+/* Styl przycisku */
+.download-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #FF5733;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 
-a:hover {
-  transform: scale(1.1);
-  color: #f9c200;
+.download-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);  /* Powiększenie przy najechaniu */
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.5); /* Większy cień */
 }
 
-/* Przyciski z interaktywnym efektem */
-button {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  background: linear-gradient(45deg, #ff8e53, #e43a15);
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  font-weight: 600;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+/* Styl treści */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
-button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(45deg, #f9c200, #2a2a72);
-}
-
-button:focus {
-  outline: none;
-}
-
-/* Styl sekcji z grafiką (np. zdjęcia, ilustracje) */
-.image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  width: 80%;
-  max-width: 600px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease;
-}
-
-.image-container:hover img {
-  transform: scale(1.1);
-}
-
-/* Animacja tekstu w tle */
-@keyframes backgroundTextAnimation {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.background-text {
-  font-size: 6rem;
-  color: rgba(255, 255, 255, 0.2);
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: backgroundTextAnimation 15s linear infinite;
-  white-space: nowrap;
+/* Stopka */
+footer {
+    background-color: #1c1c1c;
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 0.8em;
 }
